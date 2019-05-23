@@ -1,10 +1,10 @@
-import { combineReducers } from 'redux'
+import { combineReducers } from './node_modules/redux/es/redux.mjs'
 import {
   ADD_TODO,
   TOGGLE_TODO,
   SET_VISIBILITY_FILTER,
   VisibilityFilters
-} from './actions'
+} from './actions.js'
 const { SHOW_ALL } = VisibilityFilters
 
 function visibilityFilter(state = SHOW_ALL, action) {
