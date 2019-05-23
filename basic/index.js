@@ -1,4 +1,4 @@
-import {createStore} from './node_modules/redux/es/redux.mjs';
+//import {createStore} from './node_modules/redux/es/redux.mjs';
 import todoApp from './reducers.js';
 
 import {
@@ -8,7 +8,7 @@ import {
   VisibilityFilters,
 } from './actions.js';
 
-const store = createStore(todoApp);
+const store = Redux.createStore(todoApp);
 console.log(store.getState());
 
 const unsubscribe = store.subscribe(() => console.log(store.getState()));

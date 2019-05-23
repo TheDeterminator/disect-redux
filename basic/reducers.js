@@ -1,4 +1,4 @@
-import { combineReducers } from './node_modules/redux/es/redux.mjs'
+//import { combineReducers } from './node_modules/redux/es/redux.mjs'
 import {
   ADD_TODO,
   TOGGLE_TODO,
@@ -40,7 +40,7 @@ function todos(state = [], action) {
   }
 }
 
-const todoApp = combineReducers({
+const todoApp = Redux.combineReducers({
   visibilityFilter,
   todos
 })
