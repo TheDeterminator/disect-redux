@@ -15,4 +15,7 @@ const store = createStore(
 );
 
 store.dispatch(selectSubreddit('reactjs'));
-store.dispatch(fetchPosts('reactjs')).then(() => console.log(store.getState()));
+store.dispatch(fetchPosts('reactjs')).then(() => console.log(store.getState())); // Do I still need this?
+store
+  .dispatch(fetchPostsIfNeeded('reactjs'))
+  .then(() => console.log(store.getState()));
